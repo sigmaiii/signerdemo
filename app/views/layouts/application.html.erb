@@ -8,9 +8,15 @@
 </head>
 <body>
 
-<%= link_to "Home", root_path %>
+<div class="container">
+  <ul class="nav nav-tabs">
+    <%= link_to "Home", root_path %>
+    <%= link_to "Signers", signers_path %>
+    <%= link_to "About", welcome_about_path %>
+  </ul>
   
-<%= yield %>
-
+  <%= yield %>
+</div>
+  
 </body>
 </html>

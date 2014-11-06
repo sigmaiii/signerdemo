@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  get "welcome/index"
+  get "welcome/about"
   resources :signers
 
-  root to: 'signers#index'
+  root to: 'welcome#index'
   
 end
